@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/show"
+        android:gravity="center"
+        android:textSize="23dp"
+        android:background="#080808"
+        android:textColor="#ffffff"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请选择日期和时间"
+        />
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:startYear="2018"
+        android:endYear="2040"
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false"
+
+        >
+
+    </DatePicker>
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:timePickerMode="spinner"
+
+        >
+    </TimePicker>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/LinearLayout2"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:id="@+id/ok"
+            android:layout_marginLeft="80dp"
+            android:background="#06fc02"
+            android:textSize="22dp"
+            android:textColor="#fffefe"
+            />
+        <Button
+            android:id="@+id/cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="Cancle"
+            android:background="#fc0303"
+            android:textSize="22dp"
+            android:textColor="#fffefe"
+            />
+
+
+    </LinearLayout>
+</LinearLayout>

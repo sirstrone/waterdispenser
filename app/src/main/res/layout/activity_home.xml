@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Created by zou on 2018/1/28. -->
+<!-- version 1.0 -->
+<!-- build AS 3.0.1 -->
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.godzou.HomeActivity">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp">
+
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前温度:"
+            android:textSize="24dp"
+            android:id="@+id/nowtemp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x"
+            android:textSize="24dp"
+            android:id="@+id/temperature"
+            android:layout_marginLeft="110dp"
+            />
+        <Switch
+            android:id="@+id/sw_kaiguan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#1E88E5"
+            android:layout_gravity="right"
+            android:textSize="24dp"
+            android:layout_alignParentRight="true"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="饮水机开关"
+            android:textSize="24dp"
+            android:layout_toLeftOf="@id/sw_kaiguan"
+            android:layout_marginRight="20dp"/>
+
+
+        <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_marginTop="40dp"
+    >
+
+    <TextView
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text="当前水量:"
+        android:textSize="24dp"
+        />
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="x"
+                android:textSize="24dp"
+                android:id="@+id/weightx"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+    <!--底部图片-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="#fafafa"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!--立刻叫水-->
+            <ImageView
+                android:id="@+id/iv_lkjs"
+                android:layout_width="180dp"
+                android:layout_height="120dp"
+                android:src="@drawable/home_lkjs" />
+            <!--定时功能-->
+            <ImageView
+                android:id="@+id/iv_dsgn"
+                android:layout_width="179dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="30dp"
+                android:background="#fafafa"
+                app:srcCompat="@drawable/home_dsgn" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+            <!--温度设置-->
+            <ImageView
+                android:id="@+id/iv_wdsz"
+                android:layout_width="180dp"
+                android:layout_height="120dp"
+                android:background="#fafafa"
+                app:srcCompat="@drawable/home_wdsz" />
+            <!--智能叫水-->
+            <ImageView
+                android:id="@+id/iv_znjs"
+                android:layout_width="180dp"
+                android:layout_height="120dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="30dp"
+                android:background="#fafafa"
+                app:srcCompat="@drawable/home_znjs" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

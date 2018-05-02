@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Created by zou on 2018/1/26. -->
+<!-- version 1.0 -->
+<!-- build AS 3.0.1 -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_shopping"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="360dp"
+        android:layout_height="42dp"
+        android:layout_weight="0"
+        android:text="订单详情"
+        android:textSize="26sp" />
+
+    <ListView
+    android:id="@+id/lv_order"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+</ListView>
+    </LinearLayout>

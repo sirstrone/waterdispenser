@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.godzou.SetTemperature"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/temperature"
+
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TableLayout
+            android:id="@+id/tableLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            >
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/now_time_is"
+                    android:layout_width="150dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="15px"
+                    android:gravity="center"
+                    android:text="现在温度是:"
+                    android:textColor="#030303"
+                    android:textSize="18dp">
+
+                </TextView>
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/start_heat_time"
+                    android:layout_width="150dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="50px"
+                    android:gravity="center"
+                    android:text="设置加热温度:"
+                    android:textColor="#fd0101"
+                    android:textSize="18dp">
+
+                </TextView>
+
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/tableLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tableLayout1">
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/nowTemperature"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center_vertical"
+                    android:hint="x"
+                    android:textSize="18dp"></TextView>
+
+            </TableRow>
+
+            <TableRow>
+
+                <EditText
+                    android:id="@+id/setTemperature"
+                    android:layout_width="150dp"
+                    android:layout_height="45dp"
+                    android:hint="99"
+                    android:textSize="18dp"></EditText>
+
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:id="@+id/startHeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="110dp"
+            android:background="#fd0303"
+            android:text="设置温度" />
+
+        <Button
+            android:id="@+id/stopHeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="66dp"
+            android:layout_marginTop="110dp"
+            android:layout_toRightOf="@id/startHeat"
+            android:background="#028bfc"
+            android:text="现在加热取/消" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
